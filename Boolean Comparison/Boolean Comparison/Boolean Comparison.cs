@@ -14,11 +14,12 @@ class Program
             {
                 Console.WriteLine("What is the brick's weight?");
             } while (!int.TryParse(Console.ReadLine(), out weight));
+            totalWeight += weight;
 
-            Console.WriteLine("Not there yet. Currently at " + totalWeight);
+            Console.WriteLine("Not there yet. Currently at " + totalWeight + " tons");
         }
 
-        Console.WriteLine("Yay! You created a pile of bricks with overall weight of" + totalWeight);
+        Console.WriteLine("Yay! You created a pile of bricks with overall weight of " + totalWeight + " tons");
         Console.Read();
     }
 }

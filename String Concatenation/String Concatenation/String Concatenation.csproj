@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5D017866-1C55-480E-8A0D-077A2742D069}</ProjectGuid>
+    <ProjectGuid>{CA091A3B-A06B-4DBA-B7BE-82A938544907}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Boolean_Comparison</RootNamespace>
-    <AssemblyName>Boolean Comparison</AssemblyName>
+    <RootNamespace>String_Concatenation</RootNamespace>
+    <AssemblyName>String Concatenation</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Boolean Comparison.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boolean Comparison", "Boolean Comparison\Boolean Comparison.csproj", "{5D017866-1C55-480E-8A0D-077A2742D069}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String Concatenation", "String Concatenation\String Concatenation.csproj", "{CA091A3B-A06B-4DBA-B7BE-82A938544907}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5D017866-1C55-480E-8A0D-077A2742D069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D017866-1C55-480E-8A0D-077A2742D069}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D017866-1C55-480E-8A0D-077A2742D069}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5D017866-1C55-480E-8A0D-077A2742D069}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA091A3B-A06B-4DBA-B7BE-82A938544907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA091A3B-A06B-4DBA-B7BE-82A938544907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA091A3B-A06B-4DBA-B7BE-82A938544907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA091A3B-A06B-4DBA-B7BE-82A938544907}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EB299E52-19D6-472C-9D56-8A4B048C8BED}
+		SolutionGuid = {018D3B9A-20E5-4170-918D-B8A623E1B209}
 	EndGlobalSection
 EndGlobal
