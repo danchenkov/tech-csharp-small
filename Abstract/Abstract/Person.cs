@@ -8,8 +8,8 @@ namespace Abstract
 {
     abstract class Person
     {
-        protected string FirstName;
-        protected string LastName;
+        public string FirstName;
+        public string LastName;
 
         public abstract void SayName();
     }

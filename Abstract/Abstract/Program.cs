@@ -10,6 +10,9 @@ namespace Abstract
     {
         static void Main(string[] args)
         {
+            Employee employee = new Employee();
+            employee.FirstName = "Joe";
+            employee.LastName = "Smith";
         }
     }
 }
