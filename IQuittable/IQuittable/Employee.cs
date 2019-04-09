@@ -13,5 +13,14 @@ namespace IQuittable
             Console.WriteLine("Employee " + FirstName + " " + LastName + " has had enough");
             Console.ReadLine();
         }
+        public static bool operator ==(Employee employeeOne, Employee employeeTwo)
+        {
+            return (employeeOne.FirstName == employeeTwo.FirstName && employeeOne.LastName == employeeTwo.LastName);
+        }
+        public static bool operator !=(Employee employeeOne, Employee employeeTwo)
+        {
+            return !(employeeOne == employeeTwo);
+            // return (employeeOne.FirstName != employeeTwo.FirstName || employeeOne.LastName != employeeTwo.LastName);
+        }
     }
 }
