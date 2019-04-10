@@ -22,5 +22,19 @@ namespace IQuittable
             return !(employeeOne == employeeTwo);
             // return (employeeOne.FirstName != employeeTwo.FirstName || employeeOne.LastName != employeeTwo.LastName);
         }
+        public override bool Equals(object o)
+        {
+            if (o == null)
+                return false;
+
+            var employeeTwo = o as Employee;
+
+            return (FirstName == employeeTwo.FirstName && LastName == employeeTwo.LastName);
+        }
+
+        public override int GetHashCode()
+        {
+            return (FirstName + " " + LastName).GetHashCode();
+        }
     }
 }
