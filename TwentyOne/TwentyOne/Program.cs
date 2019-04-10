@@ -11,15 +11,16 @@ namespace TwentyOne
         static void Main(string[] args)
         {
             Game game = new TwentyOneGame();
-            Player alexei = new Player { Name = "Alexei" };
-            Player jesse = new Player { Name = "Jesse" };
-            Player bill = new Player { Name = "Bill" };
-            Player josh = new Player { Name = "Josh" };
+            Player<Card> alexei = new Player<Card> { Name = "Alexei" };
+            Player<Card> jesse = new Player<Card> { Name = "Jesse" };
+            Player<Card> bill = new Player<Card> { Name = "Bill" };
+            Player<Card> josh = new Player<Card> { Name = "Josh" };
 
-            game.Players = new List<Player>() { jesse, bill, josh };
-            game += alexei;
-            game.ListPlayers();
-            Console.ReadLine();
+            //game.Players = new List<Player<Card>>() { };
+            //game += josh;
+            //game += alexei;
+            //game.ListPlayers();
+            //Console.ReadLine();
 
             //Deck deck = new Deck();
             //deck.Shuffle(3);

@@ -8,7 +8,7 @@ namespace TwentyOne
 {
     abstract class Game
     {
-        public List<Player> Players { get; set; }
+        public List<Player<Card>> Players { get; set; }
         public string Name { get; set; }
         public string Dealer { get; set; }
 
@@ -16,7 +16,7 @@ namespace TwentyOne
 
         public virtual void ListPlayers()
         {
-            foreach (Player player in Players)
+            foreach (Player<Card> player in Players)
             {
                 Console.WriteLine(player.Name);
             }
