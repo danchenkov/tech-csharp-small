@@ -16,22 +16,22 @@ namespace TwentyOne
             Player<Card> bill = new Player<Card> { Name = "Bill" };
             Player<Card> josh = new Player<Card> { Name = "Josh" };
 
-            //game.Players = new List<Player<Card>>() { };
-            //game += josh;
-            //game += alexei;
-            //game.ListPlayers();
-            //Console.ReadLine();
+            game.Players = new List<Player<Card>>() { };
+            game += josh;
+            game += alexei;
+            game.ListPlayers();
+            Console.ReadLine();
 
-            //Deck deck = new Deck();
-            //deck.Shuffle(3);
+            Deck deck = new Deck();
+            deck.Shuffle(3);
 
-            //foreach (Card card in deck.Cards)
-            //{
-            //    Console.WriteLine(card.Face + " of " + card.Suit);
+            foreach (Card card in deck.Cards)
+            {
+                Console.WriteLine(card.Face + " of " + card.Suit);
 
-            //}
-            //Console.WriteLine(deck.Cards.Count());
-            //Console.ReadLine();
+            }
+            Console.WriteLine(deck.Cards.Count());
+            Console.ReadLine();
 
         }
     }
