@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5D017866-1C55-480E-8A0D-077A2742D069}</ProjectGuid>
+    <ProjectGuid>{88B47531-BCE8-4C1C-813E-AECDC466709C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Boolean_Comparison</RootNamespace>
     <AssemblyName>Boolean Comparison</AssemblyName>
@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
