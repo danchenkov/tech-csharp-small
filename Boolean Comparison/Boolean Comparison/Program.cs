@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 class Program
 {
@@ -8,15 +8,14 @@ class Program
 
         int totalWeight = 0;
         int weight;
-        while (totalWeight < 100)
+        while (totalWeight < 21)
         {
+            Console.WriteLine("Not there yet (need 21). Currently at " + totalWeight + " tons");
             do
             {
                 Console.WriteLine("What is the brick's weight?");
             } while (!int.TryParse(Console.ReadLine(), out weight));
             totalWeight += weight;
-
-            Console.WriteLine("Not there yet (need 100). Currently at " + totalWeight + " tons");
         }
 
         Console.WriteLine("Yay! You created a pile of bricks with overall weight of " + totalWeight + " tons");
