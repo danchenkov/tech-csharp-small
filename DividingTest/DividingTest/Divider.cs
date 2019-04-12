@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace DividingTest
 {
-    class Divider
+    static class Divider
     {
-        public int half(int a)
+        public static int half(int a)
         {
             return a / 2;
         }
 
-        public void half(int a, out int b)
+        public static void half(int a, out int b)
         {
             b = a / 2;
         }

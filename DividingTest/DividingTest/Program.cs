@@ -10,15 +10,13 @@ namespace DividingTest
     {
         static void Main(string[] args)
         {
-            Divider divide = new Divider();
-
             Int32 halfme;
             do
             {
                 Console.WriteLine("Number?");
             } while (!Int32.TryParse(Console.ReadLine(), out halfme));
 
-            Console.WriteLine(divide.half(halfme));
+            Console.WriteLine(Divider.half(halfme));
 
             Console.WriteLine("______________________________");
 
@@ -28,7 +26,7 @@ namespace DividingTest
                 Console.WriteLine("Number?");
             } while (!Int32.TryParse(Console.ReadLine(), out halfmetoo));
 
-            divide.half(halfmetoo, out int result);
+            Divider.half(halfmetoo, out int result);
             Console.WriteLine(result);
 
             Console.ReadLine();
