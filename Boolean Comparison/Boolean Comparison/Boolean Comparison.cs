@@ -16,7 +16,7 @@ class Program
             } while (!int.TryParse(Console.ReadLine(), out weight));
             totalWeight += weight;
 
-            Console.WriteLine("Not there yet. Currently at " + totalWeight + " tons");
+            Console.WriteLine("Not there yet (need 100). Currently at " + totalWeight + " tons");
         }
 
         Console.WriteLine("Yay! You created a pile of bricks with overall weight of " + totalWeight + " tons");
