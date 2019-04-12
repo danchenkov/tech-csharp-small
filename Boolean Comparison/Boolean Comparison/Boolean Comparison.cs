@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Program
+class Comparison
 {
     static void Main(string[] args)
     {
