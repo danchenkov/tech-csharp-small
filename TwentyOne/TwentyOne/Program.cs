@@ -17,8 +17,12 @@ namespace TwentyOne
             Player<Card> josh = new Player<Card> { Name = "Josh" };
 
             game.Players = new List<Player<Card>>() { };
-            game += josh;
-            game += alexei;
+            //game += josh;
+            //game += alexei;
+            game.Players.Add(alexei);
+            game.Players.Add(bill);
+            game.Players.Add(jesse);
+            game.Players.Add(josh);
             game.ListPlayers();
             Console.ReadLine();
 
