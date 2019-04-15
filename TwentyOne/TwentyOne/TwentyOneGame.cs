@@ -8,9 +8,49 @@ namespace TwentyOne
 {
     class TwentyOneGame : Game, IWalkAway
     {
+        public TwentyOneDealer Dealer { get; set; }
+
         public override void Play()
         {
-            throw new NotImplementedException();
+            Dealer = new TwentyOneDealer();
+            foreach (Player player in Players)
+            {
+                player.Hand = new List<Card>();
+                player.Stay = false;
+            }
+            Dealer.Hand = new List<Card>();
+            Dealer.Stay = false;
+            Dealer.Deck = new Deck();
+
+            //Console.WriteLine("Place your bet!");
+            foreach(Player player in Players)
+            {
+                int bet;
+                do
+                {
+                    Console.WriteLine(player.Name + ", place your bet!");
+                } while (!int.TryParse(Console.ReadLine(), out bet));
+
+                bool successfullyBet = player.Bet(bet);
+                if (!successfullyBet)
+                {
+                    return;
+                }
+                Bets[player] = bet;
+            }
+            for (int i=0; i<2; i++)
+            {
+                Console.WriteLine("Dealing...");
+                foreach(Player player in Players)
+                {
+                    Console.Write("{0}: ", player.Name);
+                    Dealer.Deal(player.Hand);
+                    if ( i == 1 )
+                    {
+
+                    }
+                }
+            }
         }
 
         public override void ListPlayers()
@@ -19,7 +59,7 @@ namespace TwentyOne
 
             base.ListPlayers();
         }
-        public void WalkAway(Player<Card> player)
+        public void WalkAway(Player player)
         {
             throw new NotImplementedException();
         }

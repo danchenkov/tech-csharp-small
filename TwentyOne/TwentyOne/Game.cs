@@ -8,15 +8,15 @@ namespace TwentyOne
 {
     abstract class Game
     {
-        public List<Player<Card>> Players { get; set; }
+        public List<Player> Players { get; set; }
         public string Name { get; set; }
-        public string Dealer { get; set; }
+        public Dictionary<Player, int> Bets { get; set; }
 
         public abstract void Play();
 
         public virtual void ListPlayers()
         {
-            foreach (Player<Card> player in Players)
+            foreach (Player player in Players)
             {
                 Console.WriteLine(player.Name);
             }

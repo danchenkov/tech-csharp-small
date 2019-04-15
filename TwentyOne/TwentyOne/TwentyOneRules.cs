@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace TwentyOne
 {
-    interface IWalkAway
+    class TwentyOneRules
     {
-        void WalkAway(Player player);
+        private static Dictionary<Face, int> _cardValues = new Dictionary<Face int>()
+        {
+
+        }
     }
 }
