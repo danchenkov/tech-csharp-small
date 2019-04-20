@@ -23,6 +23,7 @@ class Program
         employees.Add(new Employee { Id = 7, FirstName = "Heidi", LastName = "Hamilton" });
         employees.Add(new Employee { Id = 8, FirstName = "Ivan", LastName = "Ivanoff" });
         employees.Add(new Employee { Id = 9, FirstName = "Joe", LastName = "Jones" });
+        employees.Add(new Employee { Id = 10, FirstName = "Joe", LastName = "Krueger" });
 
         List<Employee> selectedEmployees = new List<Employee> { };
 
