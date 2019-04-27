@@ -12,7 +12,8 @@ namespace VarTest
             var helloMoon = "Hello Moon!";
             Console.WriteLine(helloMoon);
 
-            var math = new MathOperations();
+            var math = new MathOperations(2.12);
+            Console.WriteLine("Lets pretend this is random " + math.NewRandom());
             Console.WriteLine("Lets pretend this is random " + math.NewRandom());
             Console.WriteLine("Lets pretend this is random " + math.NewRandom());
 

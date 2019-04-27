@@ -13,12 +13,19 @@ namespace VarTest
             Seed = seed;
             iteration = 0;
         }
+        public MathOperations(double seed)
+        {
+            Seed = (int)Math.Ceiling(seed);
+        }
         public MathOperations() : this(314159265) {
         }
 
         public int NewRandom()
         {
-            Seed = Seed * 7 % Int32.MaxValue;
+            Seed ^= Seed << 13;
+            Seed ^= Seed >> 17;
+            Seed ^= Seed << 5;
+            Seed = (Seed + iteration) * 7 % Int32.MaxValue;
             return (int)(Seed % 10);
         }
     }
