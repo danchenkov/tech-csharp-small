@@ -9,8 +9,8 @@ namespace Exceptional
             DateTime now = DateTime.Now;
             int guessYear;
             bool guessAgain = true;
-            
-            while(guessAgain)
+
+            while (guessAgain)
             {
                 Console.WriteLine("What is your age? (in years, use digits only)");
                 string ageString = Console.ReadLine();
@@ -22,7 +22,6 @@ namespace Exceptional
                     guessYear = now.AddYears(-age).Year;
 
                     Console.WriteLine("You must have been born in {0} or {1}", guessYear - 1, guessYear);
-                    Console.ReadLine();
                 }
                 catch (FormatException)
                 {
@@ -39,9 +38,14 @@ namespace Exceptional
                     Console.WriteLine("It is unlikely that you have that age: {0}", ageString);
                     guessAgain = true;
                 }
+                catch (Exception)
+                {
+                    Console.WriteLine("Something really bad occured, quitting");
+                    Console.ReadLine();
+                    return;
+                }
             }
-
-
+            Console.ReadLine();
         }
     }
 }
