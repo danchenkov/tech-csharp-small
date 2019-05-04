@@ -1,0 +1,15 @@
+﻿@model StudentManagementSystem.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<ul style="list-style: none">
+    <li>First Name: @Model.FirstName</li>
+    <li>Last Name: @Model.LastName</li>
+    <li>Id: @Model.Id</li>
+    <a href="../edit/@Model.Id">Edit</a>
+</ul>
+
+
