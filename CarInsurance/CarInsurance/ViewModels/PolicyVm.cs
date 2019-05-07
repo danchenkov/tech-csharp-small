@@ -15,9 +15,9 @@ namespace CarInsurance.ViewModels
         public string CarYear { get; set; }
         public string CarMake { get; set; }
         public string CarModel { get; set; }
-        public bool DUI { get; }
-        public int TrafficTickets { get; }
-        public bool FullCoverage { get; }
+        public bool DUI { get; set; }
+        public int TrafficTickets { get; set; }
+        public bool FullCoverage { get; set; }
         public decimal TotalCost { get; set; }
     }
 }
