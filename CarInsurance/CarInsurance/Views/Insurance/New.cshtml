@@ -1,0 +1,63 @@
+﻿<div class="row no-gutters m-3">
+    <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
+        <div class="card-header text-center">
+            <h3 class="m-0">Car Insurance</h3>
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("Create", "Insurance", FormMethod.Post))
+            {
+            <div class="row no-gutters">
+                <label for="driver">Driver Details</label>
+                <div id="driver" class="form-group col-md-12 input-group">
+                    <input name="FirstName" type="text" class="form-control" placeholder="First Name" />
+                </div>
+                <div class="form-group col-md-12 input-group">
+                    <input name="LastName" type="text" class="form-control" placeholder="Last Name" />
+                </div>
+                <div class="form-group col-md-12 input-group">
+                    <input name="EmailAddress" type="email" class="form-control" placeholder="Email" />
+                </div>
+                <div id="birthdate-picker" class="form-group col-md-12 input-group">
+                    <input name="Birthdate" type="text" class="form-control" placeholder="Date of Birth"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                </div>
+
+                <label for="car">Car Details</label>
+                <div id="car" class="form-group col-md-12 input-group">
+                    <input name="CarYear" type="text" class="form-control" placeholder="Car Year" />
+                </div>
+                <div class="form-group col-md-12 input-group">
+                    <input name="CarMake" type="text" class="form-control" placeholder="Car Make" />
+                </div>
+                <div class="form-group col-md-12 input-group">
+                    <input name="CarModel" type="text" class="form-control" placeholder="Car Model" />
+                </div>
+
+                <label for=" " dui">Have you ever had a DUI?</label><br />
+                <div id="dui" class="form-group col-md-12 input-group">
+                    <label class="radio"><input type="radio" name="DUI" value="false" checked>No</label>
+                    <label class="radio"><input type="radio" name="DUI" value="true">Yes</label>
+                </div>
+
+                <label for="tickets">Speeding tickets</label>
+                <div id="tickets" class="form-group col-md-12 input-group">
+                    <input name="Tickets" type="text" class="form-control" placeholder="Tickets total" />
+                </div>
+
+                <label for="coverage">Would you like full coverage or liability?</label>
+                <div id="coverage" class="form-group col-md-12 input-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Coverage" id="liability" value="Liability" checked>
+                        <label class="form-check-label" for="liability">Liability</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Coverage" id="full" value="Full">
+                        <label class="form-check-label" for="full">Full Coverage</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-block btn-primary">Apply</button>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>
