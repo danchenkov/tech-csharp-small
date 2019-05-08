@@ -28,7 +28,7 @@ namespace CarInsurance.Controllers
             }
             else
             {
-                using (PolicyEntities db = new PolicyEntities())
+                using (InsuranceEntities db = new InsuranceEntities())
                 {
                     var driver = new Person();
                     driver.FirstName = firstName;
@@ -36,7 +36,6 @@ namespace CarInsurance.Controllers
                     driver.Email = emailAddress;
                     driver.Birthdate = DateTime.Parse(birthDate);
                     db.People.Add(driver);
-                    db.SaveChanges();
 
                     var car = new CarMake();
                     car.Make = carMake;
@@ -50,8 +49,11 @@ namespace CarInsurance.Controllers
                     policy.FullCoverage = (fullCoverage == "Full");
                     policy.DUI = (dui == "True");
                     policy.Tickets = tickets;
+                    db.Policies.Add(policy);
+
+                    db.SaveChanges();
                 }
-                return View("Index");
+                return RedirectToAction("Index", "Admin");
             }
         }
     }

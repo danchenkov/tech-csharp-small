@@ -133,6 +133,30 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CarMake.cs">
+      <DependentUpon>InsurancePolicy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\InsurancePolicy.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsurancePolicy.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\InsurancePolicy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsurancePolicy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\InsurancePolicy.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsurancePolicy.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Person.cs">
+      <DependentUpon>InsurancePolicy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Policy.cs">
+      <DependentUpon>InsurancePolicy.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -145,6 +169,16 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\InsurancePolicy.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>InsurancePolicy.edmx</DependentUpon>
+      <LastGenOutput>InsurancePolicy.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\InsurancePolicy.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>InsurancePolicy.edmx</DependentUpon>
+      <LastGenOutput>InsurancePolicy.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -167,6 +201,13 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
+    <EntityDeploy Include="Models\InsurancePolicy.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InsurancePolicy.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\InsurancePolicy.edmx.diagram">
+      <DependentUpon>InsurancePolicy.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -214,7 +255,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

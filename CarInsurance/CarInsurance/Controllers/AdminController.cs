@@ -13,7 +13,7 @@ namespace CarInsurance.Controllers
         // GET: Admin
         public ActionResult Index()
         {
-            using (PolicyEntities db = new PolicyEntities())
+            using (InsuranceEntities db = new InsuranceEntities())
             {
                 var insurancePolicies = new List<PolicyVM>();
                 foreach (var policy in db.Policies)
@@ -24,27 +24,47 @@ namespace CarInsurance.Controllers
                     policyVm.LastName = policy.Person.LastName;
                     policyVm.EmailAddress = policy.Person.Email;
 
-                    decimal totalCost = 50.0;
-                    if ((DateTime.Now - policy.Person.Birthdate).TotalDays / 365 < 18)
+                    decimal totalCost = 50.0M;
+                    if (DateTime.Compare(DateTime.Now, policy.Person.Birthdate.AddYears(18)) < 0)
                     {
                         totalCost += 100;
-                    } else if ((DateTime.Now - policy.Person.Birthdate).TotalDays / 365 < 25)
+                    }
+                    else if (DateTime.Compare(DateTime.Now, policy.Person.Birthdate.AddYears(25)) < 0)
+                    {
+                        totalCost += 25;
+                    }
+                    if (DateTime.Compare(DateTime.Now, policy.Person.Birthdate.AddYears(100)) > 0)
+                    {
+                        totalCost += 25;
+                    }
+
+                    if (DateTime.Compare(policy.CarMake.Year, new DateTime(2000, 1, 1, 1, 0, 0)) < 0)
+                    {
+                        totalCost += 25;
+                    } else if (DateTime.Compare(policy.CarMake.Year, new DateTime(2015, 1, 1, 1, 0, 0)) > 0)
+                    {
+                        totalCost += 25;
+                    }
+
+                    if (policy.CarMake.Make == "Porsche")
+                    {
+                        totalCost += 25;
+                        if (policy.CarMake.Model == "911 Carrera")
                         {
                             totalCost += 25;
-                        } else if ((DateTime.Now - policy.Person.Birthdate).TotalDays / 365 > 100)
+                        }
+                    }
+
+                    totalCost += policy.Tickets.Value * 10;
+                    if (policy.DUI)
                     {
-                        totalCost += 25;
+                        totalCost = Decimal.Multiply(totalCost, 1.25M);
+                    }
+                    if (policy.FullCoverage)
+                    {
+                        totalCost = Decimal.Multiply(totalCost, 1.5M);
                     }
                     policyVm.TotalCost = totalCost;
-
-                    if (policy.CarMake.Year < 2000)
-                    {
-                        totalCost += 25;
-                    } else if (policy.CarMake.Year > 2015)
-                    {
-                        totalCost += 25;
-                    }
-
                     insurancePolicies.Add(policyVm);
                 }
 
