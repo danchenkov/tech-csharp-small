@@ -519,6 +519,49 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "NewsletterAppMVC/NewsletterAppMVC/Controllers/AdminController.cs",
+			"settings":
+			{
+				"buffer_size": 1510,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "TVSchedule/TVSchedule/Controllers/EpisodesController.cs",
+			"settings":
+			{
+				"buffer_size": 1091,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "TechAcadStudentsMVC/TechAcadStudentsMVC/Controllers/HomeController.cs",
+			"settings":
+			{
+				"buffer_size": 1669,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Schedule/Schedule/data/episodes.json",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -593,15 +636,21 @@
 	"expanded_folders":
 	[
 		"/Users/adanchenkov/Code/tech-csharp-small",
-		"/Users/adanchenkov/Code/tech-csharp-small/CarInsurance",
-		"/Users/adanchenkov/Code/tech-csharp-small/CarInsurance/CarInsurance",
-		"/Users/adanchenkov/Code/tech-csharp-small/CarInsurance/CarInsurance/Controllers",
-		"/Users/adanchenkov/Code/tech-csharp-small/CarInsurance/CarInsurance/ViewModels",
-		"/Users/adanchenkov/Code/tech-csharp-small/TwentyOne",
-		"/Users/adanchenkov/Code/tech-csharp-small/TwentyOne/TwentyOne"
+		"/Users/adanchenkov/Code/tech-csharp-small/LambdaX",
+		"/Users/adanchenkov/Code/tech-csharp-small/TechAcadStudentsMVC",
+		"/Users/adanchenkov/Code/tech-csharp-small/TechAcadStudentsMVC/TechAcadStudentsMVC",
+		"/Users/adanchenkov/Code/tech-csharp-small/TechAcadStudentsMVC/TechAcadStudentsMVC/Controllers"
 	],
 	"file_history":
 	[
+		"/Users/adanchenkov/Code/tech-csharp-small/Schedule/Schedule/data/episodes.json",
+		"/Users/adanchenkov/Code/railstest/app/controllers/posts_controller.rb",
+		"/Users/adanchenkov/Code/tech-csharp-small/Schedule/Schedule/Views/Episodes/Index.cshtml",
+		"/Users/adanchenkov/Code/tech-csharp-small/Schedule/Schedule/Views/Home/Index.cshtml",
+		"/Users/adanchenkov/Downloads/script.txt",
+		"/Users/adanchenkov/Code/tech-csharp-small/Schedule/Schedule/wwwroot/js/site.js",
+		"/Users/adanchenkov/Code/tech-csharp-small/TVSchedule/TVSchedule/Controllers/EpisodesController.cs",
+		"/Users/adanchenkov/Code/tech-csharp-small/StudentManagementSystem/StudentManagementSystem/StudentManagementSystem.csproj",
 		"/Users/adanchenkov/Code/tech-csharp-small/CarInsurance/CarInsurance/Web.config",
 		"/Users/adanchenkov/Code/tech-csharp-small/CarInsurance/CarInsurance/ViewModels/PolicyVm.cs",
 		"/Users/adanchenkov/Code/tech-csharp-small/CarInsurance/CarInsurance/Models/InsurancePolicy.Context.tt",
@@ -721,19 +770,11 @@
 		"/Users/adanchenkov/Sites/tv-webstack/text/sv/gcui_scntv-010-borrowed.xml",
 		"/Users/adanchenkov/Sites/tv-webstack/text/ru/gcui_scntv-010-borrowed.xml",
 		"/Users/adanchenkov/Sites/tv-webstack/text/pt/gcui_scntv-010-borrowed.xml",
-		"/Users/adanchenkov/Sites/tv-webstack/text/no/gcui_scntv-010-borrowed.xml",
-		"/Users/adanchenkov/Sites/tv-webstack/text/nl/gcui_scntv-010-borrowed.xml",
-		"/Users/adanchenkov/Sites/tv-webstack/text/ja/gcui_scntv-010-borrowed.xml",
-		"/Users/adanchenkov/Sites/tv-webstack/text/it/gcui_scntv-010-borrowed.xml",
-		"/Users/adanchenkov/Sites/tv-webstack/text/hu/gcui_scntv-010-borrowed.xml",
-		"/Users/adanchenkov/Sites/tv-webstack/text/he/gcui_scntv-010-borrowed.xml",
-		"/Users/adanchenkov/Sites/tv-webstack/text/fr/gcui_scntv-010-borrowed.xml",
-		"/Users/adanchenkov/Sites/tv-webstack/text/es_ES/gcui_scntv-010-borrowed.xml",
-		"/Users/adanchenkov/Sites/tv-webstack/text/es/gcui_scntv-010-borrowed.xml"
+		"/Users/adanchenkov/Sites/tv-webstack/text/no/gcui_scntv-010-borrowed.xml"
 	],
 	"find":
 	{
-		"height": 43.0
+		"height": 31.0
 	},
 	"find_in_files":
 	{
@@ -748,6 +789,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"FlavorProperties",
+			"ViewStart",
+			"api/values",
 			"InsurancePolicy",
 			"subscription"
 		],
@@ -757,6 +801,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"api/episodes"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -767,8 +812,168 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "NewsletterAppMVC/NewsletterAppMVC/Controllers/AdminController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1510,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								334,
+								334
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "TVSchedule/TVSchedule/Controllers/EpisodesController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1091,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"SL.90.region_keys":
+							[
+							],
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "TechAcadStudentsMVC/TechAcadStudentsMVC/Controllers/HomeController.cs",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1669,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 293.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Schedule/Schedule/data/episodes.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_name": "",
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
 			]
 		}
 	],
